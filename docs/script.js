@@ -1,4 +1,4 @@
-if (/index/g.test(window.location.href)) {
+
   var platform = navigator.userAgent;
   var deviceWin = true;
 
@@ -9,6 +9,7 @@ if (/index/g.test(window.location.href)) {
       deviceWin = false;
   }
 
+if (document.getElementById("main") != null){
   if (deviceWin) {
     document.getElementById("btn-personal").setAttribute('src', "img/windows_fff.svg")
     document.getElementById("link-img-personal").setAttribute('src', "img/mac.svg")
@@ -35,7 +36,7 @@ if (/index/g.test(window.location.href)) {
   })
 }
 
-if (/instruction/g.test(window.location.href)) {
+if (document.getElementById("instruction") != null){
   document.getElementById("instr-step-1").addEventListener('click',  function() {;
         document.getElementById("instr-1").classList.toggle('hidden');
         document.getElementById("icon1").classList.toggle('minus');
