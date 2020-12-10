@@ -43,8 +43,7 @@ body {
 	width: 100%;
   min-width: 360px;
 	position: relative;
-  /* box-sizing: border-box; */
-  /* overflow-x: hidden; */
+
 }
 
 img {
@@ -67,9 +66,9 @@ a:active {
 h2 {
   font-weight: 900;
   font-size: 32px;
-  line-height: 35px;
+  line-height: 36px;
   color: #1D1565;
-  margin: 20px 0;
+  margin: 19px 0;
 }
 
 .block-data_availability h2 {
@@ -94,7 +93,7 @@ h2 {
 
 .href-logo {
   margin: 30px 0;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   display: block;
 }
 .logo-footer {
@@ -190,11 +189,15 @@ h2 {
 .img-os-btn {
   width: 15px;
   height: 15px;
-  margin-left: 5px;
+  margin-left: 2px;
+}
+
+.img-os {
+  margin-top: 3px;
 }
 
 .img-os-btn {
-  padding-right: 5px;
+  padding-right: 13px;
 }
 
 .text-footer{
@@ -208,8 +211,8 @@ h2 {
   background: url('img/bg_mob.png') no-repeat center top;
   background-size: cover;
   color: #DDDDDD;
-  padding-top: 95px;
-  padding-bottom: 140px;
+  padding-top: 140px;
+  padding-bottom: 230px;
 }
 
 .text-availability {
@@ -220,8 +223,13 @@ h2 {
   margin-top: 60px;
   padding: 0;
   border-bottom: 1px solid rgba(196, 196, 196, 0.5);
-  padding-bottom: 80px;
+  padding-bottom: 78px;
 
+}
+
+.header-provider,
+.block-information-inner > .header {
+  margin-top: 0;
 }
 
 .header-provider,
@@ -230,9 +238,12 @@ h2 {
   padding-right: 30px;
 }
 
-
 .block-server {
-  padding-bottom: 60px;
+  padding-bottom: 60px
+}
+
+.block-server > .text {
+  padding-bottom: 22px;
 }
 
 .block-information {
@@ -240,7 +251,8 @@ h2 {
   padding-bottom: 20px;
 }
 .block-technical {
-  padding-top: 60px;
+  padding-top: 90px;
+  padding-bottom: 138px;
 }
 .block-information .text {
   padding-bottom: 20px;
@@ -297,7 +309,7 @@ h2 {
   color: #100A44;
   padding: 20px 0;
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .header-list:hover,
@@ -359,6 +371,7 @@ h3 {
   line-height: 25px;
   color: #000000;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .instr-list {
@@ -366,11 +379,10 @@ h3 {
 }
 
 .instr-text {
-font-size: 16px;
-    line-height: 24px;
     border-bottom: 1px solid rgba(196, 196, 196, 0.5);
     padding-bottom: 50px;
     margin-bottom: 50px;
+    padding-left: 35px;
   }
 
 .server {
@@ -396,10 +408,14 @@ color: #100A44;
 .step-2-inner .text-step {
       margin-bottom: 20px;
 }
+
+
+
 @media (min-width: 768px) {
-  body{
+  body > .instruction{
     font-size: 18px;
     line-height: 25px;
+
   }
   .logo-personal {
     width: 200px;
@@ -407,6 +423,9 @@ color: #100A44;
   }
   .href-logo {
     margin-bottom: 106px;
+  }
+  .instruction  .href-logo {
+    margin-bottom: 194px;
   }
   .about {
     background: url('img/bg_top_desc.png') no-repeat center top;
@@ -421,9 +440,7 @@ color: #100A44;
   }
   .block-personal_vpn,
   .block-server-inner,
-  .block-top,
-  .block-step-1,
-  .block-step-2 {
+  .block-top {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
@@ -432,7 +449,7 @@ color: #100A44;
     display: flex;
     flex-direction: row;
     margin-top: 210px;
-    margin-bottom: 180px;
+    margin-bottom: 210px;
     align-items: center;
 
   }
@@ -445,15 +462,17 @@ color: #100A44;
     margin-left: 90px;
   }
 
-  .step-1-inner,
-  .step-2-inner {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  .block-top {
+    padding-bottom: 220px;
   }
+
   .block-step-1,
   .block-step-2 {
+    width: 870px;
+    padding-top: 70px;
     padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .block-success {
@@ -464,12 +483,27 @@ color: #100A44;
   .block-data_availability-inner,
   .block-provider-inner,
   .block-information-inner,
-  .block-server,
-  .block-technical-inner,
   .block-footer-inner {
-    width: 600px;
+    width: 690px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .block-server {
+  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-left: 0;
+  width: 570px;
+  margin-right: 100px;
+  margin-left: 0;
+
+}
+  .block-technical-inner{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block-technical-inner > .header {
+    margin-bottom: 30px;
   }
   .block-footer-inner {
     text-align: center;
@@ -479,7 +513,7 @@ color: #100A44;
     padding-bottom: 184px;
   }
   .block-provider {
-    margin-top: 120px;
+    margin-top: 123px;
     padding-bottom: 200px;
   }
   .block-information {
@@ -488,6 +522,8 @@ color: #100A44;
   }
   .block-technical {
     padding-bottom: 180px;
+    padding-top: 185px;
+    padding-left: 40px;
   }
   .block-server .text {
     padding-bottom: 20px;
@@ -507,7 +543,12 @@ color: #100A44;
 
   .download {
     margin: 0;
-    padding-right: 22px;
+    padding-right: 45px;
+  }
+  .download > .text-personal {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
   .download-footer {
     padding-right: 0;
@@ -538,6 +579,7 @@ color: #100A44;
     color: #1D1565;
     font-weight: 800;
     line-height: 63px;
+    margin-bottom: 28px;
   }
   .bg-top {
     display: none;
@@ -546,14 +588,25 @@ color: #100A44;
   .block-data_availability {
     background: url('img/bg_desc.png') no-repeat center top;
     background-size: cover;
-    /* color: #DDDDDD;
-    padding-top: 95px;
-    padding-bottom: 140px; */
+    padding-top: 247px;
   }
+
   .logo-footer {
     margin-bottom: 40px;
   }
 
+  .technical-text {
+    padding-left: 35px;
+    padding-bottom: 25px;
+  }
+  .block-information-inner > .header-private {
+    margin-top: 50px;
+  }
 
+  .header-provider,
+  .text-provider {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }

@@ -5,10 +5,10 @@
   var iPhone = /iPhone/g;
   var iPad = /iPad/g;
 
-  if (iPhone.test(platform) || iPad.test(platform)) {
+  if (iPhone.test(platform) || iPad.test(platform) || navigator.platform.indexOf('Win') < 0) {
       deviceWin = false;
   }
-
+console.log("deviceWin", deviceWin)
 if (document.getElementById("main") != null){
   if (deviceWin) {
     document.getElementById("btn-personal").setAttribute('src', "img/windows_fff.svg")
